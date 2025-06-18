@@ -1,7 +1,9 @@
 
 import { GoogleGenAI, Chat } from "@google/genai";
 
-const API_KEY = process.env.API_KEY;
+// const API_KEY = process.env.API_KEY;
+const API_KEY = "AIzaSyDUJCG10nIo-s5DCUzSMU0r_DK34TsbXDg";
+
 const CHAT_HISTORY_KEY = 'geminiAIChatHistory';
 
 // Interfaces removed as this is now plain JavaScript.
