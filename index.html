@@ -1,0 +1,39 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Chat Bot</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🤖</text></svg>">
+<script type="importmap">
+{
+  "imports": {
+    "@google/genai": "https://esm.sh/@google/genai@^1.5.1"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+<body>
+    <div id="app-container">
+        <header>
+            <h1>AI Chat Bot</h1>
+        </header>
+        <main id="chat-container">
+            <div id="chat-history">
+                <!-- Messages will appear here -->
+            </div>
+            <div id="input-area">
+                <textarea id="message-input" placeholder="Type your message..." aria-label="Message input"></textarea>
+                <button id="send-button" aria-label="Send message">Send</button>
+            </div>
+            <div id="loading-indicator" style="display: none;" aria-live="polite">Thinking...</div>
+            <div id="error-message" style="display: none; color: red;" role="alert"></div>
+        </main>
+    </div>
+    <script src="index.js" type="module"></script>
+<script type="module" src="/index.tsx"></script>
+</body>
+</html>
